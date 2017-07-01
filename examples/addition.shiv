@@ -1,0 +1,4 @@
+addition::add_two_ints := fun (a : std::i32, b : std::i32)
+                              -> std::i32 {
+    return a + b;
+}
