@@ -86,10 +86,6 @@ int main(int argc, char** argv) {
         return 1;
     }
 
-    if (!argc) {
-        print_error("Argument not provided");
-        return 1;
-    }
     fiter.file = fopen(args.file, "r");
     if (!fiter.file) {
         print_error("Cannot open file: %s", args.file);
