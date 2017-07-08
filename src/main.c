@@ -93,6 +93,7 @@ int main(int argc, char** argv) {
     fiter.file = fopen(args.file, "r");
     if (!fiter.file) {
         print_error("Cannot open file: %s", args.file);
+        rpmalloc_finalize();
         return 1;
     }
     memset(fiter.buffer, 0, sizeof(fiter.buffer));
